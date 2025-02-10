@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 200vh;
+   }
+
+
+   .hero-heading{
+    font-size: 55px;
+   }
+
+   .hero-para{
+color: #c3cbd8;
+padding-bottom: 20px;
+
+   }
+
+   .hero-right{
+
+    img{
+        width:"6px";
+         height:"5px"
+    }
+   }
