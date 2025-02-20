@@ -24,24 +24,72 @@ body {
   }
 }
 
-
-
-.swipper{
-background-color: #f5f6f8;
-height: 7rem;
-
+.swipper {
+  background-color: #f5f6f8;
+  height: 7rem;
 }
 
-.hero-img{
+.hero-img {
   animation: imageMotion alternate-reverse 2s infinite;
-  transition: all 5s ;
+  transition: all 5s;
 }
 
-@keyframes imageMotion{
-  0%{
-transform: translateY(20px);
+h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+h2::before{
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  top: 55px;
+  width: 8rem;
+  height: 1.5px;
+  background-color: lightgray;
+}
+
+
+h2::after{
+  position: absolute;
+  top: 54px;
+  pointer-events: none;
+  content: "";
+  width: 4rem;
+  height: 3px;
+  background-color: #4ab3e5;
+}
+
+.aboutusBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.aboutusBtn i {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.aboutusBtn:hover {
+  background-color: #4ab3e5 !important;
+  color: white !important;
+}
+
+.aboutusBtn:hover i {
+  color: white !important;
+  transform: translateX(6px);
+}
+
+
+@keyframes imageMotion {
+  0% {
+    transform: translateY(20px);
   }
-  100%{
-transform: translateY(-20px);
+  100% {
+    transform: translateY(-20px);
   }
 }
